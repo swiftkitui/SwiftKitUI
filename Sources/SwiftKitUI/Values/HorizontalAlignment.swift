@@ -1,0 +1,14 @@
+//
+//  HorizontalAlignment.swift
+//  SwiftKitUI
+//
+//  Created by 张行 on 2019/7/8.
+//
+
+public enum HorizontalAlignment {
+    case leading
+    case center
+    case trailing
+}
+
+
