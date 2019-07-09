@@ -11,6 +11,7 @@ public protocol View {
 }
 
 public class ViewRoot : View {
-    public typealias Body = Never
+    public typealias Body = ViewRoot
     public var viewIdentifier: String { "\(type(of: self))" }
+    public var body: ViewRoot { ViewRoot() }
 }

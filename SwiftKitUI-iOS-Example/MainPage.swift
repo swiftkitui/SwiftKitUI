@@ -6,7 +6,7 @@
 //
 
 class MainPageView: ViewRoot {
-    var body: ViewRoot {
+    override var body: ViewRoot {
         Text("Hello Word!")
     }
 }

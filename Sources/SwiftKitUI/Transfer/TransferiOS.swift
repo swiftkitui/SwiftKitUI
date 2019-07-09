@@ -17,7 +17,7 @@ public class TransferiOS<Content:ViewRoot> : Transfer {
     }
     
     public func transferView(content: ViewRoot) -> UIView {
-        var body = content
+        var body = content.body
         if body.viewIdentifier != Stack.hStack.viewIdentifier() && body.viewIdentifier != Stack.vStack.viewIdentifier() && body.viewIdentifier != Stack.zStack.viewIdentifier() {
             body = VStack {
                 body

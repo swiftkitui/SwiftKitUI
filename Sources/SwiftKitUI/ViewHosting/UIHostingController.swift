@@ -15,7 +15,7 @@ public class UIHostingController<Content:ViewRoot> : UIViewController {
         if let bodyView = TransferiOS(content: rootView).transferView {
             self.view.addSubview(bodyView)
             bodyView.snp.makeConstraints { (maker) in
-                maker.edges.equalTo(UIEdgeInsets.zero)
+                maker.center.equalTo(self.view)
             }
         }
     }
