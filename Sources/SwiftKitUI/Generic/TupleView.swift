@@ -5,7 +5,7 @@
 //  Created by 张行 on 2019/7/8.
 //
 
-public class TupleView2<T1:ViewRoot, T2:ViewRoot> {
+public struct TupleView2<T1:View, T2:View> {
     let v1:T1
     let v2:T2
     init(_ v1:T1, _ V2:T2) {
@@ -14,7 +14,7 @@ public class TupleView2<T1:ViewRoot, T2:ViewRoot> {
     }
 }
 
-public class TupleView3<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot> {
+public struct TupleView3<T1:View, T2:View, T3:View> {
     let v1:T1
     let v2:T2
     let v3:T3
@@ -25,7 +25,7 @@ public class TupleView3<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot> {
     }
 }
 
-public class TupleView4<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot> {
+public struct TupleView4<T1:View, T2:View, T3:View, T4:View> {
     let v1:T1
     let v2:T2
     let v3:T3
@@ -38,7 +38,7 @@ public class TupleView4<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot> {
     }
 }
 
-public class TupleView5<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:ViewRoot> {
+public struct TupleView5<T1:View, T2:View, T3:View, T4:View, T5:View> {
     let v1:T1
     let v2:T2
     let v3:T3
@@ -53,7 +53,7 @@ public class TupleView5<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:V
     }
 }
 
-public class TupleView6<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:ViewRoot, T6:ViewRoot> {
+public struct TupleView6<T1:View, T2:View, T3:View, T4:View, T5:View, T6:View> {
     let v1:T1
     let v2:T2
     let v3:T3
@@ -70,7 +70,7 @@ public class TupleView6<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:V
     }
 }
 
-public class TupleView7<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:ViewRoot, T6:ViewRoot, T7:ViewRoot> {
+public struct TupleView7<T1:View, T2:View, T3:View, T4:View, T5:View, T6:View, T7:View> {
     let v1:T1
     let v2:T2
     let v3:T3
@@ -89,7 +89,7 @@ public class TupleView7<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:V
     }
 }
 
-public class TupleView8<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:ViewRoot, T6:ViewRoot, T7:ViewRoot, T8:ViewRoot> {
+public struct TupleView8<T1:View, T2:View, T3:View, T4:View, T5:View, T6:View, T7:View, T8:View> {
     let v1:T1
     let v2:T2
     let v3:T3
@@ -110,7 +110,7 @@ public class TupleView8<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:V
     }
 }
 
-public class TupleView9<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:ViewRoot, T6:ViewRoot, T7:ViewRoot, T8:ViewRoot, T9:ViewRoot> {
+public struct TupleView9<T1:View, T2:View, T3:View, T4:View, T5:View, T6:View, T7:View, T8:View, T9:View> {
     let v1:T1
     let v2:T2
     let v3:T3
@@ -132,3 +132,4 @@ public class TupleView9<T1:ViewRoot, T2:ViewRoot, T3:ViewRoot, T4:ViewRoot, T5:V
         self.v9 = v9
     }
 }
+

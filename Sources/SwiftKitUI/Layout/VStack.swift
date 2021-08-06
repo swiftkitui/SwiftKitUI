@@ -1,17 +1,29 @@
 //
 //  VStack.swift
-//  SwiftKitUI
+//  
 //
-//  Created by 张行 on 2019/7/8.
+//  Created by joser on 2021/8/6.
 //
 
-public class VStack : ViewRoot {
-    let alignment:HorizontalAlignment
-    let spacing:Length?
-    let content:ViewRoot
-    public init(alignment: HorizontalAlignment = .center, spacing: Length? = nil, content: () -> ViewRoot) {
-        self.alignment = alignment
-        self.spacing = spacing
+import Foundation
+
+public struct VStack<Content:View>: Stack, View {
+    let content:Content
+    init(@ViewBuilder content:() -> Content) {
         self.content = content()
+    }
+}
+
+
+struct MainPage: BodyView {
+    var isMe:Bool = false
+    var body: View {
+        VStack {
+            if isMe {
+                Text("")
+            } else {
+                Text("")
+            }
+        }
     }
 }

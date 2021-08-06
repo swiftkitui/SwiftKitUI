@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftKitUI",
+    platforms: [.iOS(.v10), .macOS("99")],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -12,8 +13,7 @@ let package = Package(
             targets: ["SwiftKitUI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/SnapKit",
-                 from: "5.0.0"),
+        .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
