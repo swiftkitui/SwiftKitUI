@@ -2,3 +2,6 @@
 /.build
 /Packages
 /*.xcodeproj
+.swiftpm/xcode/package.xcworkspace/xcuserdata/joser.xcuserdatad/UserInterfaceState.xcuserstate
+.swiftpm/xcode/xcuserdata/joser.xcuserdatad/xcschemes/xcschememanagement.plist
+Package.resolved
